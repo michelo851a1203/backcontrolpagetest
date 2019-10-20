@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>backendPage</title>
+    <style>
+        body {
+            font-family: Microsoft JhengHei !important;
+        }
+        html{
+            /* 這裡我們依照 dashBoard 的需求改變網頁文字大小。 */
+            font-size:14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 這裡就做一個控制台的動作。 -->
+    <!-- 可以學到新東西!很棒 -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">控制台主題</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">列表主題<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">數據主題</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="far fa-money-bill-alt fa-3x text-secondary mr-2"></div>
+                        <div class="text-center w-100">
+                            <div class="h5">今日營收</div>
+                            <div class="h3">192,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="fas fa-users fa-3x text-secondary mr-2"></div>
+                        <div class="text-center w-100">
+                            <div class="h5">會員增加</div>
+                            <div class="h3">172</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="far fa-address-card fa-3x text-secondary mr-2"></div>
+                        <div class="text-center w-100">
+                            <div class="h5">訂單數</div>
+                            <div class="h3">320</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="fas fa-archive fa-3x text-secondary mr-2"></div>
+                        <div class="text-center w-100">
+                            <div class="h5">待出貨量</div>
+                            <div class="h3">120</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 這裡製作一個控制台表單 -->
+    <!-- 這裡除了 bootstrap 本身還會額外學習圖表的使用 chart.js -->
+    <!-- 這裡要製作一個不同高的內容，但實際上內容高度一致的方法 -->
+
+    <!-- 這一段是一個重要的經驗，視為一個卡片元件做處理 -->
+    <!-- media 是為圖文空間 -->
+    <!-- 有必要更了解一下卡片元件的使用時機!! -->
+
+    <!-- 原來 font-awsome 可以直接當作 div 使用! -->
+
+    <!-- 原來 font-awsome 可以當 div 使用阿!!!!! 這個技巧有助於 flex 的利用。 -->
+
+    <!-- 1. 有必要了解卡片元件完整使用時機 -->
+    <!-- 有必要了解 w-100 w-50 等等 這類東西如何正確使用。 -->
+    <!-- h-100 的意思是頂到富容器的 100% 的意思 w-100 也是相同意思 -->
+    <!-- h-100 或 w-100 這功能比我想像的還要強大 -->
+    <!-- 其實 h-100 或 w-100 與 height:100% 差不多的意思簡言之，會依照富容器相同意思 -->
+    <!-- 如果都是用 h-100 則會看富容器最大的狀態去弄。因為仔容器的最大會撐大父容器 -->
+    <!-- 所以 height:100% (h-100) 是一個非常頂尖且優秀的寫法!! -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js'></script>
+</body>
+
+</html>
