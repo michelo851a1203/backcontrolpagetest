@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>測試頁</title>
+    <style>
+        body {
+            font-family: Microsoft JhengHei !important;
+        }
+
+        html {
+            /* 這裡我們依照 dashBoard 的需求改變網頁文字大小。 */
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">控制台主題</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">列表主題<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">數據主題</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mt-4 px-3 d-flex">
+        <div class="form-inline mr-auto">
+            <div class="form-group">
+                <div class="input-group">
+                    <input class="form-control" placeholder="搜尋..." type="text" name="" id="">
+                    <div class="input-group-append">
+                        <div class="input-group-text">好</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary">
+            <i class="fas fa-shopping-cart"></i>&nbsp;快速下單
+        </button>
+    </div>
+    <section class="mt-4 px-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">品項</th>
+                    <th scope="col">姓名</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">狀態</th>
+                    <th class="text-right" scope="col">金額</th>
+                    <th class="text-center" scope="col">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">1</td>
+                    <td>這是一件商品</td>
+                    <td>王曉明</td>
+                    <td>wang@yahoo.com.tw</td>
+                    <td>已出貨</td>
+                    <td class="text-right">NT$ 14,500</td>
+                    <td class="text-center">
+                        <div class="btn-group" role="group" aria-label="group">
+                            <input type="button" class="btn btn-outline-secondary" value="編輯">
+                            <input type="button" class="btn btn-outline-secondary" value="查看">
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                                data-toggle="dropdown">
+                                ...&nbsp;
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">功能1</a>
+                                <a href="#" class="dropdown-item">功能2</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">1</td>
+                    <td>這是一件商品</td>
+                    <td>王曉明</td>
+                    <td>wang@yahoo.com.tw</td>
+                    <td>已出貨</td>
+                    <td class="text-right">NT$ 14,500</td>
+                    <td class="text-center">
+                        <div class="btn-group" role="group" aria-label="group">
+                            <input type="button" class="btn btn-outline-secondary" value="編輯">
+                            <input type="button" class="btn btn-outline-secondary" value="查看">
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                                data-toggle="dropdown">
+                                ...&nbsp;
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">功能1</a>
+                                <a href="#" class="dropdown-item">功能2</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">1</td>
+                    <td>這是一件商品</td>
+                    <td>王曉明</td>
+                    <td>wang@yahoo.com.tw</td>
+                    <td>已出貨</td>
+                    <td class="text-right">NT$ 14,500</td>
+                    <td class="text-center">
+                        <div class="btn-group" role="group" aria-label="group">
+                            <input type="button" class="btn btn-outline-secondary" value="編輯">
+                            <input type="button" class="btn btn-outline-secondary" value="查看">
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                                data-toggle="dropdown">
+                                ...&nbsp;
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">功能1</a>
+                                <a href="#" class="dropdown-item">功能2</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </section>
+
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js'></script>
+    <script>
+        // 這個不錯。
+
+    </script>
+</body>
+
+</html>
