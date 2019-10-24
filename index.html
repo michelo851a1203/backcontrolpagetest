@@ -29,10 +29,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">列表主題<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./index.html">列表主題<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">數據主題</a>
+                    <a class="nav-link" href="./list.html">數據主題</a>
                 </li>
             </ul>
         </div>
@@ -190,43 +190,92 @@
                         <button class="btn btn-outline-secondary btn-sm ml-2">
                             訂單管理
                         </button>
-                        <div>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">
-                                            
-                                        </th>
-                                        <th scope="col">
-                                            
-                                        </th>
-                                        <th scope="col">
-                                            
-                                        </th>
-                                        <th scope="col">
-                                            
-                                        </th>
-                                        <th scope="col">
-                                            
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                </tbody>
-                                <tfoot>
-
-                                </tfoot>
-                            </table>
-                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table mt-4">
+                            <thead>
+                                <tr>
+                                    <th width="100" scope="col">日期</th>
+                                    <th width="80" scope="col">訂單數</th>
+                                    <th width="80" scope="col">退費數</th>
+                                    <th width="100" scope="col">出貨數</th>
+                                    <th width="15%" scope="col">有問題貨品</th>
+                                    <th class="text-right" scope="col">營業額</th>
+                                    <th class="text-right" scope="col">淨利潤</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">2019/09/01</td>
+                                    <td>300</td>
+                                    <td>1</td>
+                                    <td>250</td>
+                                    <td>3</td>
+                                    <td class="text-right">256,000</td>
+                                    <td class="text-right">168,000</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2019/09/01</td>
+                                    <td>300</td>
+                                    <td>1</td>
+                                    <td>250</td>
+                                    <td>3</td>
+                                    <td class="text-right">256,000</td>
+                                    <td class="text-right">168,000</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2019/09/01</td>
+                                    <td>300</td>
+                                    <td>1</td>
+                                    <td>250</td>
+                                    <td>3</td>
+                                    <td class="text-right">256,000</td>
+                                    <td class="text-right">168,000</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2019/09/01</td>
+                                    <td>300</td>
+                                    <td>1</td>
+                                    <td>250</td>
+                                    <td>3</td>
+                                    <td class="text-right">256,000</td>
+                                    <td class="text-right">168,000</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2019/09/01</td>
+                                    <td>300</td>
+                                    <td>1</td>
+                                    <td>250</td>
+                                    <td>3</td>
+                                    <td class="text-right">256,000</td>
+                                    <td class="text-right">168,000</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2019/09/01</td>
+                                    <td>300</td>
+                                    <td>1</td>
+                                    <td>250</td>
+                                    <td>3</td>
+                                    <td class="text-right">256,000</td>
+                                    <td class="text-right">168,000</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td scope="row">月總營收</td>
+                                    <td class="text-right" colspan="6">3,750,500</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">月總淨利潤</td>
+                                    <td class="text-right" colspan="6">214,500</td>
+                                </tr>
+                            </tfoot>
+                        </table>
                     </div>
                 </div>
             </div>
         </section>
-
     </div>
-
-
 
 
 
@@ -253,6 +302,9 @@
 
         // 詳細圖表的應用，可以參考官網的寫法。
         // 長條圖
+
+        // OK table 的部分完成了，接下來用列表的創作。
+
         new Chart(document.getElementById("bar-chart-grouped"), {
             type: 'bar',
             data: {
